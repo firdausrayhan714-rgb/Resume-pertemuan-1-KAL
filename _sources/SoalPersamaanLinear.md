@@ -1,11 +1,13 @@
 # Contoh soal 5 persamaan 5 variabel
 Contoh soal 5 persamaan 5 variabel
 $$
+\begin{bmatrix}
 x_1 + x_2 + x_3 + x_4 + x_5 = 15 \\
 2x_1 + 3x_2 + x_3 + x_4 + x_5 = 20 \\
 x_1 + x_2 + 2x_3 + 3x_4 + x_5 = 24 \\
 3x_1 + x_2 + x_3 + 2x_4 + x_5 = 18 \\
 x_1 + 2x_2 + x_3 + x_4 + 3x_5 = 26
+\end{bmatrix}
 $$
 
 Ini dalam bentuk Matriks Augmanted
