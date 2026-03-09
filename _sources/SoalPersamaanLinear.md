@@ -1,5 +1,6 @@
 # Contoh soal 5 persamaan 5 variabel
 Contoh soal 5 persamaan 5 variabel
+
 $$
 \begin{bmatrix}
 x_1 + x_2 + x_3 + x_4 + x_5 = 15 \\
@@ -23,7 +24,7 @@ $$
 $$
 
 
-#**cara penyelesaiannya**
+# **cara penyelesaiannya**
 ## langkah 1 Menghilangkan $x$1
 
 $$
@@ -33,7 +34,7 @@ R_4 = R_4-3R_1\\
 R_5 = R_5-R_1
 $$
 
-###Hasil Eliminasi 
+### Hasil Eliminasi 
 $$
 \begin{bmatrix}
 1 & 1 & 1 & 1 & 1 & 15 \\
@@ -100,7 +101,7 @@ $$
 \end{bmatrix}
 $$
 
-##Langkah 5
+## Langkah 5
 Menentukan $x$5
 
 $$
