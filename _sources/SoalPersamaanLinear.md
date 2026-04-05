@@ -162,3 +162,7 @@ $$
 0 & 0 & 0 & 0 & 1 & 5
 \end{bmatrix}
 $$
+
+![alt text](<Screenshot 2026-04-05 230056.png>)
+
+![alt text](<Screenshot 2026-04-05 230110.png>)
