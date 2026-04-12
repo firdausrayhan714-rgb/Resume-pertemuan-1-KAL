@@ -185,9 +185,6 @@
 <li class="toctree-l1"><a class="reference internal" href="SoalPersamaanLinear.html">Contoh soal 5 persamaan 5 variabel</a></li>
 
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Tugas Determinan Matriks</a></li>
-
-
-
 </ul>
 
     </div>
@@ -383,7 +380,6 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Tugas Determinan Matriks</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-determinan">Operasi Determinan</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bagian-a-det-a11">Bagian a det(A11)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ekspansi-ke-3x3">Ekspansi ke 3x3</a></li>
@@ -399,14 +395,9 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Ekspansi kofaktor (3x3)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Ekspansi kofaktor (2x2)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Determinan 2x2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bagian-e-det-a15">Bagian e det(A15)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-adjoin-matriks">Operasi Adjoin Matriks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-invers-matriks">Operasi Invers Matriks</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">$</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">$</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">$</a></li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -888,203 +879,55 @@ k(q w - r v)
 \Big)
 \Bigg)
 \]</div>
-</section>
-<section id="bagian-e-det-a15">
-<h2>Bagian e det(A15)<a class="headerlink" href="#bagian-e-det-a15" title="Link to this heading">#</a></h2>
-<p><span class="math notranslate nohighlight">\(
-e \ \det(A_{15}) =
-e \begin{vmatrix}
-f &amp; g &amp; h &amp; i \\
-k &amp; l &amp; m &amp; n \\
-p &amp; q &amp; r &amp; s \\
-u &amp; v &amp; w &amp; x
-\end{vmatrix}
-\)</span></p>
-<p>Ekspansi kofaktor menjadi matriks 3x3</p>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id4">
-<h1>$<a class="headerlink" href="#id4" title="Link to this heading">#</a></h1>
-<p>e \left[
-f \begin{vmatrix}
-l &amp; m &amp; n \
-q &amp; r &amp; s \
-v &amp; w &amp; x
-\end{vmatrix}</p>
-<ul class="simple">
-<li><p>g \begin{vmatrix}
-k &amp; m &amp; n \
-p &amp; r &amp; s \
-u &amp; w &amp; x
-\end{vmatrix}</p></li>
-</ul>
-<ul class="simple">
-<li><p>h \begin{vmatrix}
-k &amp; l &amp; n \
-p &amp; q &amp; s \
-u &amp; v &amp; x
-\end{vmatrix}</p></li>
-</ul>
-<ul class="simple">
-<li><p>i \begin{vmatrix}
-k &amp; l &amp; m \
-p &amp; q &amp; r \
-u &amp; v &amp; w
-\end{vmatrix}
-\right]
-$</p></li>
-</ul>
-<p>Ekspansi kofaktor menjadi matriks 2x2</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id5">
-<h1>$<a class="headerlink" href="#id5" title="Link to this heading">#</a></h1>
-<p>e \left[
-f \left(
-l \begin{vmatrix} r &amp; s \ w &amp; x \end{vmatrix}</p>
-<ul class="simple">
-<li><p>m \begin{vmatrix} q &amp; s \ v &amp; x \end{vmatrix}</p></li>
-</ul>
-<ul class="simple">
-<li><p>n \begin{vmatrix} q &amp; r \ v &amp; w \end{vmatrix}
-\right)</p></li>
-</ul>
-<ul class="simple">
-<li><p>g \left(
-k \begin{vmatrix} r &amp; s \ w &amp; x \end{vmatrix}</p></li>
-<li><p>m \begin{vmatrix} p &amp; s \ u &amp; x \end{vmatrix}</p></li>
-</ul>
-<ul class="simple">
-<li><p>n \begin{vmatrix} p &amp; r \ u &amp; w \end{vmatrix}
-\right)</p></li>
-<li><p>h \left(
-k \begin{vmatrix} q &amp; s \ v &amp; x \end{vmatrix}</p></li>
-</ul>
-<ul class="simple">
-<li><p>l \begin{vmatrix} p &amp; s \ u &amp; x \end{vmatrix}</p></li>
-</ul>
-<ul class="simple">
-<li><p>n \begin{vmatrix} p &amp; q \ u &amp; v \end{vmatrix}
-\right)</p></li>
-</ul>
-<ul class="simple">
-<li><p>i \left(
-k \begin{vmatrix} q &amp; r \ v &amp; w \end{vmatrix}</p></li>
-<li><p>l \begin{vmatrix} p &amp; r \ u &amp; w \end{vmatrix}</p></li>
-</ul>
-<ul class="simple">
-<li><p>m \begin{vmatrix} p &amp; q \ u &amp; v \end{vmatrix}
-\right)
-\right]
-$</p></li>
-</ul>
-<p>Determinan 2x2</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id6">
-<h1>$<a class="headerlink" href="#id6" title="Link to this heading">#</a></h1>
-<p>e \Big(
-f \big(
-l(rx - sw)</p>
-<ul class="simple">
-<li><p>m(qx - sv)</p></li>
-</ul>
-<ul class="simple">
-<li><p>n(qw - rv)
-\big)</p></li>
-</ul>
-<ul class="simple">
-<li><p>g \big(
-k(rx - sw)</p></li>
-<li><p>m(px - su)</p></li>
-</ul>
-<ul class="simple">
-<li><p>n(pw - ru)
-\big)</p></li>
-<li><p>h \big(
-k(qx - sv)</p></li>
-</ul>
-<ul class="simple">
-<li><p>l(px - su)</p></li>
-</ul>
-<ul class="simple">
-<li><p>n(pv - qu)
-\big)</p></li>
-</ul>
-<ul class="simple">
-<li><p>i \big(
-k(qw - rv)</p></li>
-<li><p>l(pw - ru)</p></li>
-</ul>
-<ul class="simple">
-<li><p>m(pv - qu)
-\big)
-\Big)
-$</p></li>
-</ul>
-<p>Operasi selanjutnya</p>
-<p>$
+<div class="math notranslate nohighlight">
+\[
 \det(A) =
 a \Big[
-g(m(sy - tx) - n(ry - tw) + o(rx - sw))</p>
-<ul class="simple">
-<li><p>h(l(sy - tx) - n(qy - tv) + o(qx - sv))</p></li>
-</ul>
-<ul class="simple">
-<li><p>i(l(ry - tw) - m(qy - tv) + o(qw - rv))</p></li>
-</ul>
-<ul class="simple">
-<li><p>j(l(rx - sw) - m(qx - sv) + n(qw - rv))
-\Big]</p></li>
-<li><p>b \Big[
-f(m(sy - tx) - n(ry - tw) + o(rx - sw))</p></li>
-<li><p>h(k(sy - tx) - n(py - tu) + o(px - su))</p></li>
-</ul>
-<ul class="simple">
-<li><p>i(k(ry - tw) - m(py - tu) + o(pw - ru))</p></li>
-</ul>
-<ul class="simple">
-<li><p>j(k(rx - sw) - m(px - su) + n(pw - ru))
-\Big]</p></li>
-</ul>
-<ul class="simple">
-<li><p>c \Big[
-f(l(sy - tx) - n(qy - tv) + o(qx - sv))</p></li>
-</ul>
-<ul class="simple">
-<li><p>g(k(sy - tx) - n(py - tu) + o(px - su))</p></li>
-</ul>
-<ul class="simple">
-<li><p>i(k(qy - tv) - l(py - tu) + o(pv - qu))</p></li>
-</ul>
-<ul class="simple">
-<li><p>j(k(qx - sv) - l(px - su) + n(pv - qu))
-\Big]</p></li>
-<li><p>d \Big[
-f(l(ry - tw) - m(qy - tv) + o(qw - rv))</p></li>
-<li><p>g(k(ry - tw) - m(py - tu) + o(pw - ru))</p></li>
-</ul>
-<ul class="simple">
-<li><p>h(k(qy - tv) - l(py - tu) + o(pv - qu))</p></li>
-</ul>
-<ul class="simple">
-<li><p>j(k(qw - rv) - l(pw - ru) + m(pv - qu))
-\Big]</p></li>
-</ul>
-<ul class="simple">
-<li><p>e \Big[
-f(l(rx - sw) - m(qx - sv) + n(qw - rv))</p></li>
-</ul>
-<ul class="simple">
-<li><p>g(k(rx - sw) - m(px - su) + n(pw - ru))</p></li>
-</ul>
-<ul class="simple">
-<li><p>h(k(qx - sv) - l(px - su) + n(pv - qu))</p></li>
-</ul>
-<ul class="simple">
-<li><p>i(k(qw - rv) - l(pw - ru) + m(pv - qu))
+g(m(sy - tx) - n(ry - tw) + o(rx - sw))
+- h(l(sy - tx) - n(qy - tv) + o(qx - sv))
++ i(l(ry - tw) - m(qy - tv) + o(qw - rv))
+- j(l(rx - sw) - m(qx - sv) + n(qw - rv))
 \Big]
-$</p></li>
-</ul>
-<p>##Operasi Adjoin Matriks</p>
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+- b \Big[
+f(m(sy - tx) - n(ry - tw) + o(rx - sw))
+- h(k(sy - tx) - n(py - tu) + o(px - su))
++ i(k(ry - tw) - m(py - tu) + o(pw - ru))
+- j(k(rx - sw) - m(px - su) + n(pw - ru))
+\Big]
+\]</div>
+<div class="math notranslate nohighlight">
+\[
++ c \Big[
+f(l(sy - tx) - n(qy - tv) + o(qx - sv))
+- g(k(sy - tx) - n(py - tu) + o(px - su))
++ i(k(qy - tv) - l(py - tu) + o(pv - qu))
+- j(k(qx - sv) - l(px - su) + n(pv - qu))
+\Big]
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+- d \Big[
+f(l(ry - tw) - m(qy - tv) + o(qw - rv))
+- g(k(ry - tw) - m(py - tu) + o(pw - ru))
++ h(k(qy - tv) - l(py - tu) + o(pv - qu))
+- j(k(qw - rv) - l(pw - ru) + m(pv - qu))
+\Big]
+\]</div>
+<div class="math notranslate nohighlight">
+\[
++ e \Big[
+f(l(rx - sw) - m(qx - sv) + n(qw - rv))
+- g(k(rx - sw) - m(px - su) + n(pw - ru))
++ h(k(qx - sv) - l(px - su) + n(pv - qu))
+- i(k(qw - rv) - l(pw - ru) + m(pv - qu))
+\Big]
+\]</div>
+</section>
+<section id="operasi-adjoin-matriks">
+<h2>Operasi Adjoin Matriks<a class="headerlink" href="#operasi-adjoin-matriks" title="Link to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
 \[
  \operatorname{adj}(A)_{ij} = (-1)^{i+j} M_{ji}
@@ -1288,10 +1131,13 @@ p &amp; q &amp; r &amp; s
 \end{vmatrix}
 \end{bmatrix}
 \)</span></p>
-<p>##Operasi Invers Matriks
-$<span class="math notranslate nohighlight">\(
+</section>
+<section id="operasi-invers-matriks">
+<h2>Operasi Invers Matriks<a class="headerlink" href="#operasi-invers-matriks" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[
 A^{-1} = \frac{1}{\det(A)} \operatorname{Adj}(A)
-\)</span>$</p>
+\]</div>
 <p>Contoh matriks 5X5
 $<span class="math notranslate nohighlight">\(
 A =
@@ -1579,6 +1425,7 @@ A^{-1}=
 \end{bmatrix}
 \end{split}\]</div>
 </section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1635,7 +1482,6 @@ A^{-1}=
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Tugas Determinan Matriks</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-determinan">Operasi Determinan</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bagian-a-det-a11">Bagian a det(A11)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ekspansi-ke-3x3">Ekspansi ke 3x3</a></li>
@@ -1651,14 +1497,9 @@ A^{-1}=
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Ekspansi kofaktor (3x3)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Ekspansi kofaktor (2x2)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Determinan 2x2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bagian-e-det-a15">Bagian e det(A15)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-adjoin-matriks">Operasi Adjoin Matriks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-invers-matriks">Operasi Invers Matriks</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">$</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">$</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">$</a></li>
-</ul>
-
   </nav></div>
 
 </div></div>

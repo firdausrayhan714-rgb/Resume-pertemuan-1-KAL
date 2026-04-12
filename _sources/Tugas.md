@@ -461,105 +461,7 @@ k(q w - r v)
 \Bigg)
 $$
 
-### Bagian e det(A15)
-
-$
-e \ \det(A_{15}) =
-e \begin{vmatrix}
-f & g & h & i \\
-k & l & m & n \\
-p & q & r & s \\
-u & v & w & x
-\end{vmatrix}
-$
-
-Ekspansi kofaktor menjadi matriks 3x3
-
-$
-=
-e \left[
-f \begin{vmatrix}
-l & m & n \\
-q & r & s \\
-v & w & x
-\end{vmatrix}
-- g \begin{vmatrix}
-k & m & n \\
-p & r & s \\
-u & w & x
-\end{vmatrix}
-+ h \begin{vmatrix}
-k & l & n \\
-p & q & s \\
-u & v & x
-\end{vmatrix}
-- i \begin{vmatrix}
-k & l & m \\
-p & q & r \\
-u & v & w
-\end{vmatrix}
-\right]
-$
-
-Ekspansi kofaktor menjadi matriks 2x2
-
-$
-=
-e \left[
-f \left(
-l \begin{vmatrix} r & s \\ w & x \end{vmatrix}
-- m \begin{vmatrix} q & s \\ v & x \end{vmatrix}
-+ n \begin{vmatrix} q & r \\ v & w \end{vmatrix}
-\right)
-- g \left(
-k \begin{vmatrix} r & s \\ w & x \end{vmatrix}
-- m \begin{vmatrix} p & s \\ u & x \end{vmatrix}
-+ n \begin{vmatrix} p & r \\ u & w \end{vmatrix}
-\right)
-+ h \left(
-k \begin{vmatrix} q & s \\ v & x \end{vmatrix}
-- l \begin{vmatrix} p & s \\ u & x \end{vmatrix}
-+ n \begin{vmatrix} p & q \\ u & v \end{vmatrix}
-\right)
-- i \left(
-k \begin{vmatrix} q & r \\ v & w \end{vmatrix}
-- l \begin{vmatrix} p & r \\ u & w \end{vmatrix}
-+ m \begin{vmatrix} p & q \\ u & v \end{vmatrix}
-\right)
-\right]
-$
-
-Determinan 2x2
-
-$
-=
-e \Big(
-f \big(
-l(rx - sw)
-- m(qx - sv)
-+ n(qw - rv)
-\big)
-- g \big(
-k(rx - sw)
-- m(px - su)
-+ n(pw - ru)
-\big)
-+ h \big(
-k(qx - sv)
-- l(px - su)
-+ n(pv - qu)
-\big)
-- i \big(
-k(qw - rv)
-- l(pw - ru)
-+ m(pv - qu)
-\big)
-\Big)
-$
-
-Operasi selanjutnya
-
-$
+$$
 \det(A) =
 a \Big[
 g(m(sy - tx) - n(ry - tw) + o(rx - sw))
@@ -567,33 +469,41 @@ g(m(sy - tx) - n(ry - tw) + o(rx - sw))
 + i(l(ry - tw) - m(qy - tv) + o(qw - rv))
 - j(l(rx - sw) - m(qx - sv) + n(qw - rv))
 \Big]
+$$
+$$
 - b \Big[
 f(m(sy - tx) - n(ry - tw) + o(rx - sw))
 - h(k(sy - tx) - n(py - tu) + o(px - su))
 + i(k(ry - tw) - m(py - tu) + o(pw - ru))
 - j(k(rx - sw) - m(px - su) + n(pw - ru))
 \Big]
+$$
+$$
 + c \Big[
 f(l(sy - tx) - n(qy - tv) + o(qx - sv))
 - g(k(sy - tx) - n(py - tu) + o(px - su))
 + i(k(qy - tv) - l(py - tu) + o(pv - qu))
 - j(k(qx - sv) - l(px - su) + n(pv - qu))
 \Big]
+$$
+$$
 - d \Big[
 f(l(ry - tw) - m(qy - tv) + o(qw - rv))
 - g(k(ry - tw) - m(py - tu) + o(pw - ru))
 + h(k(qy - tv) - l(py - tu) + o(pv - qu))
 - j(k(qw - rv) - l(pw - ru) + m(pv - qu))
 \Big]
+$$
+$$
 + e \Big[
 f(l(rx - sw) - m(qx - sv) + n(qw - rv))
 - g(k(rx - sw) - m(px - su) + n(pw - ru))
 + h(k(qx - sv) - l(px - su) + n(pv - qu))
 - i(k(qw - rv) - l(pw - ru) + m(pv - qu))
 \Big]
-$
+$$
 
-##Operasi Adjoin Matriks
+### Operasi Adjoin Matriks
 
 $$
  \operatorname{adj}(A)_{ij} = (-1)^{i+j} M_{ji}
@@ -801,7 +711,7 @@ p & q & r & s
 \end{bmatrix}
 $
 
-##Operasi Invers Matriks
+### Operasi Invers Matriks
 $$
 A^{-1} = \frac{1}{\det(A)} \operatorname{Adj}(A)
 $$
