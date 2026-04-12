@@ -85,96 +85,136 @@ u & v & w & x
 $$
 ### Bagian a det(A11)
 
-$
-a \ \det(A_{11}) =
-a \begin{vmatrix}
+$$
+a \cdot \det(A_{11}) =
+a \cdot
+\begin{vmatrix}
 g & h & i & j \\
 l & m & n & o \\
 q & r & s & t \\
 v & w & x & y
 \end{vmatrix}
-$
+$$
 
-Ekspansi kofaktor menjadi matriks 3x3
+---
 
-$
+#### Ekspansi ke 3x3
+
+$$
 = a \left[
-g \begin{vmatrix}
+g \cdot
+\begin{vmatrix}
 m & n & o \\
 r & s & t \\
 w & x & y
 \end{vmatrix}
-- h \begin{vmatrix}
+-
+h \cdot
+\begin{vmatrix}
 l & n & o \\
 q & s & t \\
 v & x & y
 \end{vmatrix}
-+ i \begin{vmatrix}
++
+i \cdot
+\begin{vmatrix}
 l & m & o \\
 q & r & t \\
 v & w & y
 \end{vmatrix}
-- j \begin{vmatrix}
+-
+j \cdot
+\begin{vmatrix}
 l & m & n \\
 q & r & s \\
 v & w & x
 \end{vmatrix}
 \right]
-$
+$$
 
-Ekspansi kofaktor menjadi matriks 2x2
+---
 
-$
-=a \left[
+#### Ekspansi ke 2x2
+
+$$
+= a \left[
 g \left(
-m \begin{vmatrix} s & t \\ x & y \end{vmatrix}
-- n \begin{vmatrix} r & t \\ w & y \end{vmatrix}
-+ o \begin{vmatrix} r & s \\ w & x \end{vmatrix}
+m \cdot
+\begin{vmatrix} s & t \\ x & y \end{vmatrix}
+-
+n \cdot
+\begin{vmatrix} r & t \\ w & y \end{vmatrix}
++
+o \cdot
+\begin{vmatrix} r & s \\ w & x \end{vmatrix}
 \right)
-- h \left(
-l \begin{vmatrix} s & t \\ x & y \end{vmatrix}
-- n \begin{vmatrix} q & t \\ v & y \end{vmatrix}
-+ o \begin{vmatrix} q & s \\ v & x \end{vmatrix}
+-
+h \left(
+l \cdot
+\begin{vmatrix} s & t \\ x & y \end{vmatrix}
+-
+n \cdot
+\begin{vmatrix} q & t \\ v & y \end{vmatrix}
++
+o \cdot
+\begin{vmatrix} q & s \\ v & x \end{vmatrix}
 \right)
-+ i \left(
-l \begin{vmatrix} r & t \\ w & y \end{vmatrix}
-- m \begin{vmatrix} q & t \\ v & y \end{vmatrix}
-+ o \begin{vmatrix} q & r \\ v & w \end{vmatrix}
++
+i \left(
+l \cdot
+\begin{vmatrix} r & t \\ w & y \end{vmatrix}
+-
+m \cdot
+\begin{vmatrix} q & t \\ v & y \end{vmatrix}
++
+o \cdot
+\begin{vmatrix} q & r \\ v & w \end{vmatrix}
 \right)
-- j \left(
-l \begin{vmatrix} r & s \\ w & x \end{vmatrix}
-- m \begin{vmatrix} q & s \\ v & x \end{vmatrix}
-+ n \begin{vmatrix} q & r \\ v & w \end{vmatrix}
+-
+j \left(
+l \cdot
+\begin{vmatrix} r & s \\ w & x \end{vmatrix}
+-
+m \cdot
+\begin{vmatrix} q & s \\ v & x \end{vmatrix}
++
+n \cdot
+\begin{vmatrix} q & r \\ v & w \end{vmatrix}
 \right)
 \right]
-$
+$$
 
-Determinan 2x2
+---
 
-$
-= a \Big(
-g \big(
+#### Hasil Determinan 2x2
+
+$$
+= a \left(
+g \left(
 m(sy - tx)
 - n(ry - tw)
 + o(rx - sw)
-\big)
-- h \big(
+\right)
+-
+h \left(
 l(sy - tx)
 - n(qy - tv)
 + o(qx - sv)
-\big)
-+ i \big(
+\right)
++
+i \left(
 l(ry - tw)
 - m(qy - tv)
 + o(qw - rv)
-\big)
-- j \big(
+\right)
+-
+j \left(
 l(rx - sw)
 - m(qx - sv)
 + n(qw - rv)
-\big)
-\Big)
-$
+\right)
+\right)
+$$
 
 ### Bagian -b det(A12)
 

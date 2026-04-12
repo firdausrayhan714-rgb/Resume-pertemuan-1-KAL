@@ -392,7 +392,12 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Tugas Determinan Matriks</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-determinan">Operasi Determinan</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bagian-a-det-a11">Bagian a det(A11)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bagian-a-det-a11">Bagian a det(A11)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ekspansi-ke-3x3">Ekspansi ke 3x3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ekspansi-ke-2x2">Ekspansi ke 2x2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-determinan-2x2">Hasil Determinan 2x2</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bagian-b-det-a12">Bagian -b det(A12)</a></li>
 </ul>
 </li>
@@ -512,128 +517,137 @@ u &amp; v &amp; w &amp; x
 </section>
 <section id="bagian-a-det-a11">
 <h2>Bagian a det(A11)<a class="headerlink" href="#bagian-a-det-a11" title="Link to this heading">#</a></h2>
-<p><span class="math notranslate nohighlight">\(
-a \ \det(A_{11}) =
-a \begin{vmatrix}
+<div class="math notranslate nohighlight">
+\[\begin{split}
+a \cdot \det(A_{11}) =
+a \cdot
+\begin{vmatrix}
 g &amp; h &amp; i &amp; j \\
 l &amp; m &amp; n &amp; o \\
 q &amp; r &amp; s &amp; t \\
 v &amp; w &amp; x &amp; y
 \end{vmatrix}
-\)</span></p>
-<p>Ekspansi kofaktor menjadi matriks 3x3</p>
-<p>$
+\end{split}\]</div>
+<hr class="docutils" />
+<section id="ekspansi-ke-3x3">
+<h3>Ekspansi ke 3x3<a class="headerlink" href="#ekspansi-ke-3x3" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
 = a \left[
-g \begin{vmatrix}
-m &amp; n &amp; o \
-r &amp; s &amp; t \
+g \cdot
+\begin{vmatrix}
+m &amp; n &amp; o \\
+r &amp; s &amp; t \\
 w &amp; x &amp; y
-\end{vmatrix}</p>
-<ul class="simple">
-<li><p>h \begin{vmatrix}
-l &amp; n &amp; o \
-q &amp; s &amp; t \
+\end{vmatrix}
+-
+h \cdot
+\begin{vmatrix}
+l &amp; n &amp; o \\
+q &amp; s &amp; t \\
 v &amp; x &amp; y
-\end{vmatrix}</p></li>
-</ul>
-<ul class="simple">
-<li><p>i \begin{vmatrix}
-l &amp; m &amp; o \
-q &amp; r &amp; t \
+\end{vmatrix}
++
+i \cdot
+\begin{vmatrix}
+l &amp; m &amp; o \\
+q &amp; r &amp; t \\
 v &amp; w &amp; y
-\end{vmatrix}</p></li>
-</ul>
-<ul class="simple">
-<li><p>j \begin{vmatrix}
-l &amp; m &amp; n \
-q &amp; r &amp; s \
+\end{vmatrix}
+-
+j \cdot
+\begin{vmatrix}
+l &amp; m &amp; n \\
+q &amp; r &amp; s \\
 v &amp; w &amp; x
 \end{vmatrix}
 \right]
-$</p></li>
-</ul>
-<p>Ekspansi kofaktor menjadi matriks 2x2</p>
-<p>$
-=a \left[
+\end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="ekspansi-ke-2x2">
+<h3>Ekspansi ke 2x2<a class="headerlink" href="#ekspansi-ke-2x2" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+= a \left[
 g \left(
-m \begin{vmatrix} s &amp; t \ x &amp; y \end{vmatrix}</p>
-<ul class="simple">
-<li><p>n \begin{vmatrix} r &amp; t \ w &amp; y \end{vmatrix}</p></li>
-</ul>
-<ul class="simple">
-<li><p>o \begin{vmatrix} r &amp; s \ w &amp; x \end{vmatrix}
-\right)</p></li>
-</ul>
-<ul class="simple">
-<li><p>h \left(
-l \begin{vmatrix} s &amp; t \ x &amp; y \end{vmatrix}</p></li>
-<li><p>n \begin{vmatrix} q &amp; t \ v &amp; y \end{vmatrix}</p></li>
-</ul>
-<ul class="simple">
-<li><p>o \begin{vmatrix} q &amp; s \ v &amp; x \end{vmatrix}
-\right)</p></li>
-<li><p>i \left(
-l \begin{vmatrix} r &amp; t \ w &amp; y \end{vmatrix}</p></li>
-</ul>
-<ul class="simple">
-<li><p>m \begin{vmatrix} q &amp; t \ v &amp; y \end{vmatrix}</p></li>
-</ul>
-<ul class="simple">
-<li><p>o \begin{vmatrix} q &amp; r \ v &amp; w \end{vmatrix}
-\right)</p></li>
-</ul>
-<ul class="simple">
-<li><p>j \left(
-l \begin{vmatrix} r &amp; s \ w &amp; x \end{vmatrix}</p></li>
-<li><p>m \begin{vmatrix} q &amp; s \ v &amp; x \end{vmatrix}</p></li>
-</ul>
-<ul class="simple">
-<li><p>n \begin{vmatrix} q &amp; r \ v &amp; w \end{vmatrix}
+m \cdot
+\begin{vmatrix} s &amp; t \\ x &amp; y \end{vmatrix}
+-
+n \cdot
+\begin{vmatrix} r &amp; t \\ w &amp; y \end{vmatrix}
++
+o \cdot
+\begin{vmatrix} r &amp; s \\ w &amp; x \end{vmatrix}
+\right)
+-
+h \left(
+l \cdot
+\begin{vmatrix} s &amp; t \\ x &amp; y \end{vmatrix}
+-
+n \cdot
+\begin{vmatrix} q &amp; t \\ v &amp; y \end{vmatrix}
++
+o \cdot
+\begin{vmatrix} q &amp; s \\ v &amp; x \end{vmatrix}
+\right)
++
+i \left(
+l \cdot
+\begin{vmatrix} r &amp; t \\ w &amp; y \end{vmatrix}
+-
+m \cdot
+\begin{vmatrix} q &amp; t \\ v &amp; y \end{vmatrix}
++
+o \cdot
+\begin{vmatrix} q &amp; r \\ v &amp; w \end{vmatrix}
+\right)
+-
+j \left(
+l \cdot
+\begin{vmatrix} r &amp; s \\ w &amp; x \end{vmatrix}
+-
+m \cdot
+\begin{vmatrix} q &amp; s \\ v &amp; x \end{vmatrix}
++
+n \cdot
+\begin{vmatrix} q &amp; r \\ v &amp; w \end{vmatrix}
 \right)
 \right]
-$</p></li>
-</ul>
-<p>Determinan 2x2</p>
-<p>$
-= a \Big(
-g \big(
-m(sy - tx)</p>
-<ul class="simple">
-<li><p>n(ry - tw)</p></li>
-</ul>
-<ul class="simple">
-<li><p>o(rx - sw)
-\big)</p></li>
-</ul>
-<ul class="simple">
-<li><p>h \big(
-l(sy - tx)</p></li>
-<li><p>n(qy - tv)</p></li>
-</ul>
-<ul class="simple">
-<li><p>o(qx - sv)
-\big)</p></li>
-<li><p>i \big(
-l(ry - tw)</p></li>
-</ul>
-<ul class="simple">
-<li><p>m(qy - tv)</p></li>
-</ul>
-<ul class="simple">
-<li><p>o(qw - rv)
-\big)</p></li>
-</ul>
-<ul class="simple">
-<li><p>j \big(
-l(rx - sw)</p></li>
-<li><p>m(qx - sv)</p></li>
-</ul>
-<ul class="simple">
-<li><p>n(qw - rv)
-\big)
-\Big)
-$</p></li>
-</ul>
+\end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="hasil-determinan-2x2">
+<h3>Hasil Determinan 2x2<a class="headerlink" href="#hasil-determinan-2x2" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+= a \left(
+g \left(
+m(sy - tx)
+- n(ry - tw)
++ o(rx - sw)
+\right)
+-
+h \left(
+l(sy - tx)
+- n(qy - tv)
++ o(qx - sv)
+\right)
++
+i \left(
+l(ry - tw)
+- m(qy - tv)
++ o(qw - rv)
+\right)
+-
+j \left(
+l(rx - sw)
+- m(qx - sv)
++ n(qw - rv)
+\right)
+\right)
+\]</div>
+</section>
 </section>
 <section id="bagian-b-det-a12">
 <h2>Bagian -b det(A12)<a class="headerlink" href="#bagian-b-det-a12" title="Link to this heading">#</a></h2>
@@ -1776,7 +1790,12 @@ A^{-1}=
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Tugas Determinan Matriks</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-determinan">Operasi Determinan</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bagian-a-det-a11">Bagian a det(A11)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bagian-a-det-a11">Bagian a det(A11)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ekspansi-ke-3x3">Ekspansi ke 3x3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ekspansi-ke-2x2">Ekspansi ke 2x2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-determinan-2x2">Hasil Determinan 2x2</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bagian-b-det-a12">Bagian -b det(A12)</a></li>
 </ul>
 </li>
