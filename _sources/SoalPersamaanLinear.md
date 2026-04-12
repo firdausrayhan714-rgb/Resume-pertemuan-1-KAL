@@ -163,6 +163,6 @@ $$
 \end{bmatrix}
 $$
 
-![alt text](<Screenshot 2026-04-05 230056.png>)
+![alt text](ss1.png)
 
-![alt text](<Screenshot 2026-04-05 230110.png>)
+![alt text](ss2.png)
