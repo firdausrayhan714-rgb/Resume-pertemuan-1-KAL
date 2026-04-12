@@ -21,69 +21,68 @@ u & v & w & x & y
 \end{bmatrix}
 $$
 
-###Operasi Determinan
+### Operasi Determinan
 
-$
-\det A =
-(-1)^{1+1} \, a \, \det(A_{11})
-+ (-1)^{1+2} \, b \, \det(A_{12})
-+ (-1)^{1+3} \, c \, \det(A_{13})
-+ (-1)^{1+4} \, d \, \det(A_{14})
-+ (-1)^{1+5} \, e \, \det(A_{15})
-$
+$$
+\det(A) =
+(-1)^{1+1} a \det(A_{11})
++ (-1)^{1+2} b \det(A_{12})
++ (-1)^{1+3} c \det(A_{13})
++ (-1)^{1+4} d \det(A_{14})
++ (-1)^{1+5} e \det(A_{15})
+$$
 
-$
-\det A =
-a \, \det A_{11}
-- b \, \det A_{12}
-+ c \, \det A_{13}
-- d \, \det A_{14}
-+ e \, \det A_{15}
-$
+$$
+\det(A) =
+a \det(A_{11})
+- b \det(A_{12})
++ c \det(A_{13})
+- d \det(A_{14})
++ e \det(A_{15})
+$$
 
-$
-\det A =
-a \, \det
-\begin{bmatrix}
+$$
+\det(A) =
+a \cdot
+\begin{vmatrix}
 g & h & i & j \\
 l & m & n & o \\
 q & r & s & t \\
 v & w & x & y
-\end{bmatrix}
+\end{vmatrix}
 -
-b \, \det
-\begin{bmatrix}
+b \cdot
+\begin{vmatrix}
 f & h & i & j \\
 k & m & n & o \\
 p & r & s & t \\
 u & w & x & y
-\end{bmatrix}
-+ \;
-c \, \det
-\begin{bmatrix}
+\end{vmatrix}
++
+c \cdot
+\begin{vmatrix}
 f & g & i & j \\
 k & l & n & o \\
 p & q & s & t \\
 u & v & x & y
-\end{bmatrix}
+\end{vmatrix}
 -
-d \, \det
-\begin{bmatrix}
+d \cdot
+\begin{vmatrix}
 f & g & h & j \\
 k & l & m & o \\
 p & q & r & t \\
 u & v & w & y
-\end{bmatrix}
-+ \;
-e \, \det
-\begin{bmatrix}
+\end{vmatrix}
++
+e \cdot
+\begin{vmatrix}
 f & g & h & i \\
 k & l & m & n \\
 p & q & r & s \\
 u & v & w & x
-\end{bmatrix}
-$
-
+\end{vmatrix}
+$$
 ### Bagian a det(A11)
 
 $

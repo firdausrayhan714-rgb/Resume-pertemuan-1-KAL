@@ -391,19 +391,9 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Tugas Determinan Matriks</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#det-a-a-det-begin-bmatrix-g-h-i-j-l-m-n-o-q-r-s-t-v-w-x-y-end-bmatrix">$
-\det A =
-a , \det
-\begin{bmatrix}
-g &amp; h &amp; i &amp; j \
-l &amp; m &amp; n &amp; o \
-q &amp; r &amp; s &amp; t \
-v &amp; w &amp; x &amp; y
-\end{bmatrix}</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bagian-a-det-a11">Bagian a det(A11)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bagian-b-det-a12">Bagian -b det(A12)</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-determinan">Operasi Determinan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bagian-a-det-a11">Bagian a det(A11)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bagian-b-det-a12">Bagian -b det(A12)</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">$</a><ul class="visible nav section-nav flex-column">
@@ -456,83 +446,72 @@ p &amp; q &amp; r &amp; s &amp; t \\
 u &amp; v &amp; w &amp; x &amp; y
 \end{bmatrix}
 \)</span>$</p>
-<p>###Operasi Determinan</p>
-<p>$
-\det A =
-(-1)^{1+1} , a , \det(A_{11})</p>
-<ul class="simple">
-<li><p>(-1)^{1+2} , b , \det(A_{12})</p></li>
-<li><p>(-1)^{1+3} , c , \det(A_{13})</p></li>
-<li><p>(-1)^{1+4} , d , \det(A_{14})</p></li>
-<li><p>(-1)^{1+5} , e , \det(A_{15})
-$</p></li>
-</ul>
-<p>$
-\det A =
-a , \det A_{11}</p>
-<ul class="simple">
-<li><p>b , \det A_{12}</p></li>
-</ul>
-<ul class="simple">
-<li><p>c , \det A_{13}</p></li>
-</ul>
-<ul class="simple">
-<li><p>d , \det A_{14}</p></li>
-</ul>
-<ul class="simple">
-<li><p>e , \det A_{15}
-$</p></li>
-</ul>
-<section id="det-a-a-det-begin-bmatrix-g-h-i-j-l-m-n-o-q-r-s-t-v-w-x-y-end-bmatrix">
-<h2>$
-\det A =
-a , \det
-\begin{bmatrix}
-g &amp; h &amp; i &amp; j \
-l &amp; m &amp; n &amp; o \
-q &amp; r &amp; s &amp; t \
+<section id="operasi-determinan">
+<h2>Operasi Determinan<a class="headerlink" href="#operasi-determinan" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[
+\det(A) =
+(-1)^{1+1} a \det(A_{11})
++ (-1)^{1+2} b \det(A_{12})
++ (-1)^{1+3} c \det(A_{13})
++ (-1)^{1+4} d \det(A_{14})
++ (-1)^{1+5} e \det(A_{15})
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\det(A) =
+a \det(A_{11})
+- b \det(A_{12})
++ c \det(A_{13})
+- d \det(A_{14})
++ e \det(A_{15})
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\det(A) =
+a \cdot
+\begin{vmatrix}
+g &amp; h &amp; i &amp; j \\
+l &amp; m &amp; n &amp; o \\
+q &amp; r &amp; s &amp; t \\
 v &amp; w &amp; x &amp; y
-\end{bmatrix}<a class="headerlink" href="#det-a-a-det-begin-bmatrix-g-h-i-j-l-m-n-o-q-r-s-t-v-w-x-y-end-bmatrix" title="Link to this heading">#</a></h2>
-<p>b , \det
-\begin{bmatrix}
-f &amp; h &amp; i &amp; j \
-k &amp; m &amp; n &amp; o \
-p &amp; r &amp; s &amp; t \
+\end{vmatrix}
+-
+b \cdot
+\begin{vmatrix}
+f &amp; h &amp; i &amp; j \\
+k &amp; m &amp; n &amp; o \\
+p &amp; r &amp; s &amp; t \\
 u &amp; w &amp; x &amp; y
-\end{bmatrix}</p>
-<ul class="simple">
-<li><p>;
-c , \det
-\begin{bmatrix}
-f &amp; g &amp; i &amp; j \
-k &amp; l &amp; n &amp; o \
-p &amp; q &amp; s &amp; t \
+\end{vmatrix}
++
+c \cdot
+\begin{vmatrix}
+f &amp; g &amp; i &amp; j \\
+k &amp; l &amp; n &amp; o \\
+p &amp; q &amp; s &amp; t \\
 u &amp; v &amp; x &amp; y
-\end{bmatrix}</p></li>
-</ul>
-<ul class="simple">
-<li></li>
-</ul>
-<p>d , \det
-\begin{bmatrix}
-f &amp; g &amp; h &amp; j \
-k &amp; l &amp; m &amp; o \
-p &amp; q &amp; r &amp; t \
+\end{vmatrix}
+-
+d \cdot
+\begin{vmatrix}
+f &amp; g &amp; h &amp; j \\
+k &amp; l &amp; m &amp; o \\
+p &amp; q &amp; r &amp; t \\
 u &amp; v &amp; w &amp; y
-\end{bmatrix}</p>
-<ul class="simple">
-<li><p>;
-e , \det
-\begin{bmatrix}
-f &amp; g &amp; h &amp; i \
-k &amp; l &amp; m &amp; n \
-p &amp; q &amp; r &amp; s \
+\end{vmatrix}
++
+e \cdot
+\begin{vmatrix}
+f &amp; g &amp; h &amp; i \\
+k &amp; l &amp; m &amp; n \\
+p &amp; q &amp; r &amp; s \\
 u &amp; v &amp; w &amp; x
-\end{bmatrix}
-$</p></li>
-</ul>
+\end{vmatrix}
+\end{split}\]</div>
+</section>
 <section id="bagian-a-det-a11">
-<h3>Bagian a det(A11)<a class="headerlink" href="#bagian-a-det-a11" title="Link to this heading">#</a></h3>
+<h2>Bagian a det(A11)<a class="headerlink" href="#bagian-a-det-a11" title="Link to this heading">#</a></h2>
 <p><span class="math notranslate nohighlight">\(
 a \ \det(A_{11}) =
 a \begin{vmatrix}
@@ -657,7 +636,7 @@ $</p></li>
 </ul>
 </section>
 <section id="bagian-b-det-a12">
-<h3>Bagian -b det(A12)<a class="headerlink" href="#bagian-b-det-a12" title="Link to this heading">#</a></h3>
+<h2>Bagian -b det(A12)<a class="headerlink" href="#bagian-b-det-a12" title="Link to this heading">#</a></h2>
 <p>$</p>
 <ul class="simple">
 <li><p>b \ \det(A_{12}) =</p></li>
@@ -742,7 +721,6 @@ k \begin{vmatrix} r &amp; s \ w &amp; x \end{vmatrix}</p></li>
 $</p></li>
 </ul>
 <p>Determinan 2x2</p>
-</section>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="id1">
@@ -1797,19 +1775,9 @@ A^{-1}=
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Tugas Determinan Matriks</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#det-a-a-det-begin-bmatrix-g-h-i-j-l-m-n-o-q-r-s-t-v-w-x-y-end-bmatrix">$
-\det A =
-a , \det
-\begin{bmatrix}
-g &amp; h &amp; i &amp; j \
-l &amp; m &amp; n &amp; o \
-q &amp; r &amp; s &amp; t \
-v &amp; w &amp; x &amp; y
-\end{bmatrix}</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bagian-a-det-a11">Bagian a det(A11)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bagian-b-det-a12">Bagian -b det(A12)</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-determinan">Operasi Determinan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bagian-a-det-a11">Bagian a det(A11)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bagian-b-det-a12">Bagian -b det(A12)</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">$</a><ul class="visible nav section-nav flex-column">
