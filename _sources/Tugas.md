@@ -218,19 +218,19 @@ $$
 
 ### Bagian -b det(A12)
 
-$
-- b \ \det(A_{12}) =
+$$
+- b \det(A_{12}) =
 - b \begin{vmatrix}
 f & h & i & j \\
 k & m & n & o \\
 p & r & s & t \\
 u & w & x & y
 \end{vmatrix}
-$
+$$
 
-Ekspansi kofaktor menjadi matriks 3x3
+### Ekspansi kofaktor (3x3)
 
-$
+$$
 = - b \left[
 f \begin{vmatrix}
 m & n & o \\
@@ -253,12 +253,12 @@ p & r & s \\
 u & w & x
 \end{vmatrix}
 \right]
-$
+$$
 
-Ekspansi kofaktor menjadi matriks 2x2
+### Ekspansi kofaktor (2x2)
 
-$
-=-b \left[
+$$
+= - b \left[
 f \left(
 m \begin{vmatrix} s & t \\ x & y \end{vmatrix}
 - n \begin{vmatrix} r & t \\ w & y \end{vmatrix}
@@ -280,13 +280,12 @@ k \begin{vmatrix} r & s \\ w & x \end{vmatrix}
 + n \begin{vmatrix} p & r \\ u & w \end{vmatrix}
 \right)
 \right]
-$
+$$
 
-Determinan 2x2
+### Determinan 2x2
 
-$
-=
-- b \Big(
+$$
+= - b \Big(
 f \big(
 m(sy - tx)
 - n(ry - tw)
@@ -308,25 +307,24 @@ k(rx - sw)
 + n(pw - ru)
 \big)
 \Big)
-$
+$$
 
 ### Bagian c det(A13)
 
-$
-c \ \det(A_{13}) =
+$$
+c \det(A_{13}) =
 c \begin{vmatrix}
 f & g & i & j \\
 k & l & n & o \\
 p & q & s & t \\
 u & v & x & y
 \end{vmatrix}
-$
+$$
 
-Ekspansi kofaktor menjadi matriks 3x3
+### Ekspansi kofaktor (3x3)
 
-$
-=
-c \left[
+$$
+= c \left[
 f \begin{vmatrix}
 l & n & o \\
 q & s & t \\
@@ -348,13 +346,12 @@ p & q & s \\
 u & v & x
 \end{vmatrix}
 \right]
-$
+$$
 
-Ekspansi kofaktor menjadi matriks 2x2
+### Ekspansi kofaktor (2x2)
 
-$
-=
-c \left[
+$$
+= c \left[
 f \left(
 l \begin{vmatrix} s & t \\ x & y \end{vmatrix}
 - n \begin{vmatrix} q & t \\ v & y \end{vmatrix}
@@ -376,13 +373,12 @@ k \begin{vmatrix} q & s \\ v & x \end{vmatrix}
 + n \begin{vmatrix} p & q \\ u & v \end{vmatrix}
 \right)
 \right]
-$
+$$
 
-Determinan 2x2
+### Determinan 2x2
 
-$
-=
-c \Big(
+$$
+= c \Big(
 f \big(
 l(sy - tx)
 - n(qy - tv)
@@ -404,25 +400,18 @@ k(qx - sv)
 + n(pv - qu)
 \big)
 \Big)
-$
+$$
 
-### Bagian -d det(A14)
-
-$
-- d \ \det(A_{14}) =
+$$
+- d \, \det(A_{14}) =
 - d \begin{vmatrix}
 f & g & h & j \\
 k & l & m & o \\
 p & q & r & t \\
 u & v & w & y
 \end{vmatrix}
-$
-
-Ekspansi kofaktor menjadi matriks 3x3
-
-$
 =
-- d \left[
+- d \Bigg[
 f \begin{vmatrix}
 l & m & o \\
 q & r & t \\
@@ -443,64 +432,34 @@ k & l & m \\
 p & q & r \\
 u & v & w
 \end{vmatrix}
-\right]
-$
-
-Ekspansi kofaktor menjadi matriks 2x2
-
-$
-=
-- d \left[
-f \left(
-l \begin{vmatrix} r & t \\ w & y \end{vmatrix}
-- m \begin{vmatrix} q & t \\ v & y \end{vmatrix}
-+ o \begin{vmatrix} q & r \\ v & w \end{vmatrix}
-\right)
-- g \left(
-k \begin{vmatrix} r & t \\ w & y \end{vmatrix}
-- m \begin{vmatrix} p & t \\ u & y \end{vmatrix}
-+ o \begin{vmatrix} p & r \\ u & w \end{vmatrix}
-\right)
-+ h \left(
-k \begin{vmatrix} q & t \\ v & y \end{vmatrix}
-- l \begin{vmatrix} p & t \\ u & y \end{vmatrix}
-+ o \begin{vmatrix} p & q \\ u & v \end{vmatrix}
-\right)
-- j \left(
-k \begin{vmatrix} q & r \\ v & w \end{vmatrix}
-- l \begin{vmatrix} p & r \\ u & w \end{vmatrix}
-+ m \begin{vmatrix} p & q \\ u & v \end{vmatrix}
-\right)
-\right]
-$
-
-Determinan 2x2
-
-$
-=
-- d \Big(
-f \big(
-l(ry - tw)
-- m(qy - tv)
-+ o(qw - rv)
-\big)
-- g \big(
-k(ry - tw)
-- m(py - tu)
-+ o(pw - ru)
-\big)
-+ h \big(
-k(qy - tv)
-- l(py - tu)
-+ o(pv - qu)
-\big)
-- j \big(
-k(qw - rv)
-- l(pw - ru)
-+ m(pv - qu)
-\big)
+\Bigg]
+$$
+$$
+= -d \Bigg[
+f \Big(
+l(r y - t w)
+- m(q y - t v)
++ o(q w - r v)
 \Big)
-$
+- g \Big(
+k(r y - t w)
+- m(p y - t u)
++ o(p w - r u)
+\Big)
+$$
+$$
++ h \Big(
+k(q y - t v)
+- l(p y - t u)
++ o(p v - q u)
+\Big)
+- j \Big(
+k(q w - r v)
+- l(p w - r u)
++ m(p v - q u)
+\Big)
+\Bigg)
+$$
 
 ### Bagian e det(A15)
 
