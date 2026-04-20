@@ -8,9 +8,11 @@ dengan ($M_{ij}$) adalah minior dari matrik A dan
 $$M_{ij} = \det A_{ij}$$
 ($A_{ij}$)adalah submatrik dengan menghapus baris i dan kolom kolom j dari matrix (A_{mxn}) dengan ($1 \le i, j \le n$)
 
+$$
 1. A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}
 2. A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}
 3. A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}.
+$$
 
 
 ### B. Gunakan rumus matriks adjoin untuk menghitung invers dari matriks berikut dengan rumus
