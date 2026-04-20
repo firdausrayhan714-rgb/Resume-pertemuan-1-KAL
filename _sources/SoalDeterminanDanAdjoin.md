@@ -10,7 +10,11 @@ $$M_{ij} = \det A_{ij}$$
 
 $$
 1. A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}
+$$
+$$
 2. A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}
+$$
+$$
 3. A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}.
 $$
 
