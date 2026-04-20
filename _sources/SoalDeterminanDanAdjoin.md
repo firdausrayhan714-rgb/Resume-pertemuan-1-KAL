@@ -1,5 +1,6 @@
-#Soal
-## A. Hitunglah determinan matrik berikut dengan menggunakan rumus expansi baris
+# Soal Determinan Matriks Dan Adjoin
+
+### A. Hitunglah determinan matrik berikut dengan menggunakan rumus expansi baris
 
 $$\sum_{k=1}^{n} (-1)^{i+k} a_{ik} M_{ik}$$
 
@@ -12,7 +13,7 @@ $$M_{ij} = \det A_{ij}$$
 3. A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}.
 
 
-## B. Gunakan rumus matriks adjoin untuk menghitung invers dari matriks berikut dengan rumus
+### B. Gunakan rumus matriks adjoin untuk menghitung invers dari matriks berikut dengan rumus
 
 $$(\operatorname{adj} A)_{ij} = (-1)^{i+j} M_{ji}$$
 dan
@@ -23,7 +24,7 @@ $$A^{-1} = \frac{1}{\det A} \operatorname{adj} A.$$
 6. A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}.
 
 
-# Jawaban
+### Jawaban
 ### Penyelesaian Soal Nomor A1
 
 Diketahui matriks:
