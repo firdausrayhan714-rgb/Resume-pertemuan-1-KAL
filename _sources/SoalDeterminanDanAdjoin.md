@@ -84,31 +84,33 @@ $$A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}$$
    $$\det(A) = 1 \cdot (-2)$$
    $$\det(A) = -2$$
 
-### Penyelesaian Soal Nomor A3
+### Penyelesaian Nomor 3: Determinan Matriks 4x4
 
 Diketahui matriks:
 $$A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}$$
 
-**Langkah-langkah Penyelesaian (Ekspansi Baris Pertama):**
+**Langkah 1: Ekspansi Baris Pertama**
+Gunakan pola tanda kofaktor $(+, -, +, -)$:
+$$\det(A) = 1(M_{11}) - (-3)(M_{12}) + 1(M_{13}) - 1(M_{14})$$
+$$\det(A) = 1(M_{11}) + 3(M_{12}) + 1(M_{13}) - 1(M_{14})$$
 
-1. Gunakan rumus ekspansi untuk baris $i=1$:
-   $$\det(A) = a_{11}C_{11} + a_{12}C_{12} + a_{13}C_{13} + a_{14}C_{14}$$
+**Langkah 2: Menghitung Minor 3x3**
 
-2. Jabarkan kofaktornya:
-   $$\det(A) = 1 \begin{vmatrix} 1 & 1 & 1 \\ 1 & -3 & 1 \\ 1 & 1 & -3 \end{vmatrix} - (-3) \begin{vmatrix} -3 & 1 & 1 \\ 1 & -3 & 1 \\ 1 & 1 & -3 \end{vmatrix} + 1 \begin{vmatrix} -3 & 1 & 1 \\ 1 & 1 & 1 \\ 1 & 1 & -3 \end{vmatrix} - 1 \begin{vmatrix} -3 & 1 & 1 \\ 1 & -3 & 1 \\ 1 & 1 & 1 \end{vmatrix}$$
+1. **Minor $M_{11}$:**
+   $$M_{11} = \begin{vmatrix} 1 & 1 & 1 \\ 1 & -3 & 1 \\ 1 & 1 & -3 \end{vmatrix} = 1(9-1) - 1(-3-1) + 1(1+3) = 8+4+4 = 16$$
 
-3. Hitung masing-masing determinan $3 \times 3$:
-   * $\det(M_{11}) = 1(9-1) - 1(-3-1) + 1(1+3) = 8 + 4 + 4 = 16$
-   * $\det(M_{12}) = -3(9-1) - 1(-3-1) + 1(1+3) = -24 + 4 + 4 = -16$
-   * $\det(M_{13}) = -3(-3-1) - 1(-3-1) + 1(1-1) = 12 + 4 + 0 = 16$
-   * $\det(M_{14}) = -3(1+3) - 1(1+3) + 1(1+3) = -12 - 4 + 4 = -12$
+2. **Minor $M_{12}$:**
+   $$M_{12} = \begin{vmatrix} -3 & 1 & 1 \\ 1 & -3 & 1 \\ 1 & 1 & -3 \end{vmatrix} = -3(9-1) - 1(-3-1) + 1(1+3) = -24+4+4 = -16$$
 
-4. Masukkan kembali ke rumus utama:
-   $$\det(A) = 1(16) + 3(-16) + 1(16) - 1(-12)$$
-   $$\det(A) = 16 - 48 + 16 + 12$$
+3. **Minor $M_{13}$:**
+   $$M_{13} = \begin{vmatrix} -3 & 1 & 1 \\ 1 & 1 & 1 \\ 1 & 1 & -3 \end{vmatrix} = -3(-3-1) - 1(-3-1) + 1(1-1) = 12+4+0 = 16$$
 
-5. **Hasil Akhir:**
-   $$\det(A) = -4$$
+4. **Minor $M_{14}$:**
+   $$M_{14} = \begin{vmatrix} -3 & 1 & 1 \\ 1 & -3 & 1 \\ 1 & 1 & 1 \end{vmatrix} = -3(-3-1) - 1(1-1) + 1(1+3) = 12-0+4 = 16$$
+
+**Langkah 3: Substitusi Akhir**
+$$\det(A) = 1(16) + 3(-16) + 1(16) - 1(16)$$
+$$\det(A) = 16 - 48 + 16 - 16 = -32$$
 
 ### Penyelesaian Soal Nomor B4 
 
@@ -135,7 +137,7 @@ $$A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}$$
 1. Hitung Determinan
 (Dari hasil sebelumnya): $\det(A) = -2$
 
-**Langkah 2: Hitung Matriks Kofaktor ($C_{ij}$)**
+2. Hitung Matriks Kofaktor ($C_{ij}$)
 * $C_{11} = + \begin{vmatrix} -2 & -1 \\ 0 & 1 \end{vmatrix} = -2$
 * $C_{12} = - \begin{vmatrix} 1 & -1 \\ 0 & 1 \end{vmatrix} = -1$
 * $C_{13} = + \begin{vmatrix} 1 & -2 \\ 0 & 0 \end{vmatrix} = 0$
@@ -149,34 +151,24 @@ $$A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}$$
 3. Tentukan Adjoin (Transpose dari Kofaktor)
 $$\text{adj } A = C^T = \begin{bmatrix} -2 & -2 & -8 \\ -1 & 0 & -3 \\ 0 & 0 & -2 \end{bmatrix}$$
 
-**Langkah 4: Hitung Invers**
+4. Hitung Invers
 $$A^{-1} = \frac{1}{-2} \begin{bmatrix} -2 & -2 & -8 \\ -1 & 0 & -3 \\ 0 & 0 & -2 \end{bmatrix} = \begin{bmatrix} 1 & 1 & 4 \\ \frac{1}{2} & 0 & \frac{3}{2} \\ 0 & 0 & 1 \end{bmatrix}$$
 
-### Penyelesaian Soal Nomor B6 
+### Penyelesaian Detail Nomor 6: Invers Matriks 4x4
 
-Diketahui matriks:
-$$A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}$$
+Berdasarkan perhitungan sebelumnya, didapatkan $\det(A) = -32$.
 
-1. Determinan
-Berdasarkan perhitungan sebelumnya:
-$$\det(A) = -128$$
-
-2. Menghitung Matriks Kofaktor ($C_{ij}$)
-Kita harus menghitung 16 kofaktor. Karena matriks ini memiliki pola simetris, kita bisa menghemat waktu.
-* $C_{11} = (-1)^{1+1} \det(M_{11}) = 16$
-* $C_{12} = (-1)^{1+2} \det(M_{12}) = -(-16) = 16$
-* $C_{13} = (-1)^{1+3} \det(M_{13}) = 16$
-* $C_{14} = (-1)^{1+4} \det(M_{14}) = -(-16) = 16$
-
-Setelah menghitung semua elemen kofaktor:
-$$C = \begin{bmatrix} 16 & 16 & 16 & 16 \\ 16 & 16 & -16 & -16 \\ 16 & -16 & 16 & -16 \\ 16 & -16 & -16 & 16 \end{bmatrix}$$
-
-3. Matriks Adjoin ($\text{adj } A = C^T$)
-Karena kofaktor ini simetris, maka $\text{adj } A$ sama dengan matriks kofaktor itu sendiri:
+**Langkah 1: Menentukan Matriks Adjoin**
+Matriks adjoin ($adj \ A$) diperoleh dari transpose matriks kofaktor. Untuk matriks ini, hasilnya adalah:
 $$\text{adj } A = \begin{bmatrix} 16 & 16 & 16 & 16 \\ 16 & 16 & -16 & -16 \\ 16 & -16 & 16 & -16 \\ 16 & -16 & -16 & 16 \end{bmatrix}$$
 
-4. Hasil Akhir Invers ($A^{-1} = \frac{1}{\det A} \text{adj } A$)
-$$A^{-1} = \frac{1}{-128} \begin{bmatrix} 16 & 16 & 16 & 16 \\ 16 & 16 & -16 & -16 \\ 16 & -16 & 16 & -16 \\ 16 & -16 & -16 & 16 \end{bmatrix}$$
+**Langkah 2: Menghitung Invers**
+Gunakan rumus $A^{-1} = \frac{1}{\det A} \text{adj } A$:
+$$A^{-1} = \frac{1}{-32} \begin{bmatrix} 16 & 16 & 16 & 16 \\ 16 & 16 & -16 & -16 \\ 16 & -16 & 16 & -16 \\ 16 & -16 & -16 & 16 \end{bmatrix}$$
 
-Sederhanakan dengan membagi setiap elemen dengan $-128$:
-$$A^{-1} = \begin{bmatrix} -1/8 & -1/8 & -1/8 & -1/8 \\ -1/8 & -1/8 & 1/8 & 1/8 \\ -1/8 & 1/8 & -1/8 & 1/8 \\ -1/8 & 1/8 & 1/8 & -1/8 \end{bmatrix}$$
+**Langkah 3: Pembagian Setiap Elemen**
+* $\frac{16}{-32} = -0.5$
+* $\frac{-16}{-32} = 0.5$
+
+**Hasil Akhir:**
+$$A^{-1} = \begin{bmatrix} -0.5 & -0.5 & -0.5 & -0.5 \\ -0.5 & -0.5 & 0.5 & 0.5 \\ -0.5 & 0.5 & -0.5 & 0.5 \\ -0.5 & 0.5 & 0.5 & -0.5 \end{bmatrix}$$
