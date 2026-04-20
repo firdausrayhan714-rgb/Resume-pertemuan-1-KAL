@@ -25,10 +25,15 @@ $$(\operatorname{adj} A)_{ij} = (-1)^{i+j} M_{ji}$$
 dan
 $$A^{-1} = \frac{1}{\det A} \operatorname{adj} A.$$
 
+$$
 4. A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}
+$$
+$$
 5. A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}
+$$
+$$
 6. A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}.
-
+$$
 
 ### Jawaban
 ### Penyelesaian Soal Nomor A1
