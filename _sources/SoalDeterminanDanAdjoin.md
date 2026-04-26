@@ -92,22 +92,6 @@ A=
 \end{bmatrix}
 $$
 
-### B. Gunakan rumus matriks adjoin untuk menghitung invers dari matriks berikut dengan rumus
-
-$$(\operatorname{adj} A)_{ij} = (-1)^{i+j} M_{ji}$$
-dan
-$$A^{-1} = \frac{1}{\det A} \operatorname{adj} A.$$
-
-$$
-4. A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}
-$$
-$$
-5. A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}
-$$
-$$
-6. A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}.
-$$
-
 ### Jawaban
 ### Penyelesaian Soal Nomor A1
 
@@ -223,7 +207,7 @@ $$
 \boxed{\det(A)=-2}
 $$
 
-### Penyelesaian Nomor B3: Determinan Matriks 4x4
+### Penyelesaian Nomor A3: Determinan Matriks 4x4
 
 $$
 A=
@@ -707,6 +691,42 @@ $$
 $$
 
 Rumus invers matriks dengan adjoin:
+
+$$
+A^{-1}=\frac{1}{\det(A)}\operatorname{adj}(A)
+$$
+
+Substitusi:
+
+$$
+A^{-1}=\frac{1}{0}\operatorname{adj}(A)
+$$
+
+Karena pembagian dengan nol tidak terdefinisi, maka matriks \(A\) tidak memiliki invers.
+
+$$
+\boxed{A^{-1}\text{ tidak ada}}
+$$
+
+### Penyelesaian Soal Nomor B6
+
+$$
+A=
+\begin{bmatrix}
+1 & -3 & 1 & 1\\
+-3 & 1 & 1 & 1\\
+1 & 1 & -3 & 1\\
+1 & 1 & 1 & -3
+\end{bmatrix}
+$$
+
+Dari hasil perhitungan determinan sebelumnya diperoleh:
+
+$$
+\det(A)=0
+$$
+
+Rumus invers matriks:
 
 $$
 A^{-1}=\frac{1}{\det(A)}\operatorname{adj}(A)
