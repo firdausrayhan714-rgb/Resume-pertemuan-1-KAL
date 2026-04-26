@@ -338,45 +338,282 @@ $$
 
 ### Penyelesaian Soal Nomor B4 
 
-Diketahui matriks:
-$$A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}$$
+$$
+A=
+\begin{bmatrix}
+-7 & -5\\
+1 & 4
+\end{bmatrix}
+$$
 
-1. Hitung Determinan
-$$\det(A) = (-7)(4) - (-5)(1) = -28 + 5 = -23$$
+Determinan matriks:
 
-2. Tentukan Matriks Adjoin
-Untuk matriks $2 \times 2$, adjoin diperoleh dengan menukar elemen diagonal utama dan mengubah tanda elemen diagonal sekunder:
-$$\text{adj } A = \begin{bmatrix} 4 & 5 \\ -1 & -7 \end{bmatrix}$$
+$$
+\det(A)=(-7)(4)-(-5)(1)
+$$
 
-3. Hitung Invers
-Menggunakan rumus $A^{-1} = \frac{1}{\det A} \text{adj } A$:
-$$A^{-1} = \frac{1}{-23} \begin{bmatrix} 4 & 5 \\ -1 & -7 \end{bmatrix}$$
-$$A^{-1} = \begin{bmatrix} -\frac{4}{23} & -\frac{5}{23} \\ \frac{1}{23} & \frac{7}{23} \end{bmatrix}$$
+$$
+=-28+5=-23
+$$
+
+Rumus invers matriks:
+
+$$
+A^{-1}=\frac{1}{\det(A)}\operatorname{adj}(A)
+$$
+
+---
+
+### 1. Mencari adjoin matriks
+
+Untuk matriks 2×2:
+
+$$
+A=
+\begin{bmatrix}
+a & b\\
+c & d
+\end{bmatrix}
+$$
+
+maka:
+
+$$
+\operatorname{adj}(A)=
+\begin{bmatrix}
+d & -b\\
+-c & a
+\end{bmatrix}
+$$
+
+Sehingga:
+
+$$
+\operatorname{adj}(A)=
+\begin{bmatrix}
+4 & 5\\
+-1 & -7
+\end{bmatrix}
+$$
+
+---
+
+### 2. Mencari invers matriks
+
+$$
+A^{-1}=\frac{1}{-23}
+\begin{bmatrix}
+4 & 5\\
+-1 & -7
+\end{bmatrix}
+$$
+
+$$
+A^{-1}=
+\begin{bmatrix}
+-\frac{4}{23} & -\frac{5}{23}\\
+\frac{1}{23} & \frac{7}{23}
+\end{bmatrix}
+$$
+
+Jadi,
+
+$$
+\boxed{
+A^{-1}=
+\begin{bmatrix}
+-\frac{4}{23} & -\frac{5}{23}\\
+\frac{1}{23} & \frac{7}{23}
+\end{bmatrix}
+}
+$$
 
 ### Penyelesaian Soal Nomor B5 
 
-Diketahui matriks:
-$$A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}$$
+$$
+A=
+\begin{bmatrix}
+0 & 2 & -3\\
+1 & -2 & -1\\
+0 & 0 & 1
+\end{bmatrix}
+$$
 
-1. Hitung Determinan
-(Dari hasil sebelumnya): $\det(A) = -2$
+Dari hasil sebelumnya diperoleh:
 
-2. Hitung Matriks Kofaktor ($C_{ij}$)
-* $C_{11} = + \begin{vmatrix} -2 & -1 \\ 0 & 1 \end{vmatrix} = -2$
-* $C_{12} = - \begin{vmatrix} 1 & -1 \\ 0 & 1 \end{vmatrix} = -1$
-* $C_{13} = + \begin{vmatrix} 1 & -2 \\ 0 & 0 \end{vmatrix} = 0$
-* $C_{21} = - \begin{vmatrix} 2 & -3 \\ 0 & 1 \end{vmatrix} = -2$
-* $C_{22} = + \begin{vmatrix} 0 & -3 \\ 0 & 1 \end{vmatrix} = 0$
-* $C_{23} = - \begin{vmatrix} 0 & 2 \\ 0 & 0 \end{vmatrix} = 0$
-* $C_{31} = + \begin{vmatrix} 2 & -3 \\ -2 & -1 \end{vmatrix} = -2 - 6 = -8$
-* $C_{32} = - \begin{vmatrix} 0 & -3 \\ 1 & -1 \end{vmatrix} = -(0 + 3) = -3$
-* $C_{33} = + \begin{vmatrix} 0 & 2 \\ 1 & -2 \end{vmatrix} = -2$
+$$
+\det(A)=-2
+$$
 
-3. Tentukan Adjoin (Transpose dari Kofaktor)
-$$\text{adj } A = C^T = \begin{bmatrix} -2 & -2 & -8 \\ -1 & 0 & -3 \\ 0 & 0 & -2 \end{bmatrix}$$
+Rumus invers matriks:
 
-4. Hitung Invers
-$$A^{-1} = \frac{1}{-2} \begin{bmatrix} -2 & -2 & -8 \\ -1 & 0 & -3 \\ 0 & 0 & -2 \end{bmatrix} = \begin{bmatrix} 1 & 1 & 4 \\ \frac{1}{2} & 0 & \frac{3}{2} \\ 0 & 0 & 1 \end{bmatrix}$$
+$$
+A^{-1}=\frac{1}{\det(A)}\operatorname{adj}(A)
+$$
+
+---
+
+### 1. Mencari matriks kofaktor
+
+#### Kofaktor \(C_{11}\)
+
+$$
+C_{11}=(-1)^{1+1}
+\begin{vmatrix}
+-2 & -1\\
+0 & 1
+\end{vmatrix}
+=-2
+$$
+
+#### Kofaktor \(C_{12}\)
+
+$$
+C_{12}=(-1)^{1+2}
+\begin{vmatrix}
+1 & -1\\
+0 & 1
+\end{vmatrix}
+=-1
+$$
+
+#### Kofaktor \(C_{13}\)
+
+$$
+C_{13}=(-1)^{1+3}
+\begin{vmatrix}
+1 & -2\\
+0 & 0
+\end{vmatrix}
+=0
+$$
+
+#### Kofaktor \(C_{21}\)
+
+$$
+C_{21}=(-1)^{2+1}
+\begin{vmatrix}
+2 & -3\\
+0 & 1
+\end{vmatrix}
+=-2
+$$
+
+#### Kofaktor \(C_{22}\)
+
+$$
+C_{22}=(-1)^{2+2}
+\begin{vmatrix}
+0 & -3\\
+0 & 1
+\end{vmatrix}
+=0
+$$
+
+#### Kofaktor \(C_{23}\)
+
+$$
+C_{23}=(-1)^{2+3}
+\begin{vmatrix}
+0 & 2\\
+0 & 0
+\end{vmatrix}
+=0
+$$
+
+#### Kofaktor \(C_{31}\)
+
+$$
+C_{31}=(-1)^{3+1}
+\begin{vmatrix}
+2 & -3\\
+-2 & -1
+\end{vmatrix}
+=-8
+$$
+
+#### Kofaktor \(C_{32}\)
+
+$$
+C_{32}=(-1)^{3+2}
+\begin{vmatrix}
+0 & -3\\
+1 & -1
+\end{vmatrix}
+=-3
+$$
+
+#### Kofaktor \(C_{33}\)
+
+$$
+C_{33}=(-1)^{3+3}
+\begin{vmatrix}
+0 & 2\\
+1 & -2
+\end{vmatrix}
+=-2
+$$
+
+Maka matriks kofaktor:
+
+$$
+C=
+\begin{bmatrix}
+-2 & -1 & 0\\
+-2 & 0 & 0\\
+-8 & -3 & -2
+\end{bmatrix}
+$$
+
+---
+
+### 2. Mencari adjoin
+
+Transpose matriks kofaktor:
+
+$$
+\operatorname{adj}(A)=C^T=
+\begin{bmatrix}
+-2 & -2 & -8\\
+-1 & 0 & -3\\
+0 & 0 & -2
+\end{bmatrix}
+$$
+
+---
+
+### 3. Mencari invers matriks
+
+$$
+A^{-1}=\frac{1}{-2}
+\begin{bmatrix}
+-2 & -2 & -8\\
+-1 & 0 & -3\\
+0 & 0 & -2
+\end{bmatrix}
+$$
+
+$$
+A^{-1}=
+\begin{bmatrix}
+1 & 1 & 4\\
+\frac{1}{2} & 0 & \frac{3}{2}\\
+0 & 0 & 1
+\end{bmatrix}
+$$
+
+Jadi,
+
+$$
+\boxed{
+A^{-1}=
+\begin{bmatrix}
+1 & 1 & 4\\
+\frac{1}{2} & 0 & \frac{3}{2}\\
+0 & 0 & 1
+\end{bmatrix}
+}
+$$
 
 ### Penyelesaian Detail Nomor 6: Invers Matriks 4x4
 
