@@ -2,22 +2,95 @@
 
 ### A. Hitunglah determinan matrik berikut dengan menggunakan rumus expansi baris
 
-$$\sum_{k=1}^{n} (-1)^{i+k} a_{ik} M_{ik}$$
-
-dengan ($M_{ij}$) adalah minior dari matrik A dan
-$$M_{ij} = \det A_{ij}$$
-($A_{ij}$)adalah submatrik dengan menghapus baris i dan kolom kolom j dari matrix (A_{mxn}) dengan ($1 \le i, j \le n$)
-
 $$
-1. A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}
-$$
-$$
-2. A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}
-$$
-$$
-3. A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}.
+\det(A)=\sum_{k=1}^{n}(-1)^{i+k}a_{ik}M_{ik}
 $$
 
+dengan \( M_{ij} \) adalah minor dari matriks \( A \), dan
+
+$$
+M_{ij}=\det(A_{ij})
+$$
+
+dengan \( A_{ij} \) adalah submatriks yang diperoleh dengan menghapus baris ke-\(i\) dan kolom ke-\(j\) dari matriks \( A_{m \times n} \), untuk
+
+$$
+1 \le i,j \le n
+$$
+
+#### 1.
+$$
+A=
+\begin{bmatrix}
+-7 & -5\\
+1 & 4
+\end{bmatrix}
+$$
+
+#### 2.
+$$
+A=
+\begin{bmatrix}
+0 & 2 & -3\\
+1 & -2 & -1\\
+0 & 0 & 1
+\end{bmatrix}
+$$
+
+#### 3.
+$$
+A=
+\begin{bmatrix}
+1 & -3 & 1 & 1\\
+-3 & 1 & 1 & 1\\
+1 & 1 & -3 & 1\\
+1 & 1 & 1 & -3
+\end{bmatrix}
+$$
+
+---
+
+### B. Gunakan rumus matriks adjoin untuk menghitung invers dari matriks berikut
+
+$$
+(\operatorname{adj}A)_{ij}=(-1)^{i+j}M_{ji}
+$$
+
+dan
+
+$$
+A^{-1}=\frac{1}{\det(A)}\operatorname{adj}(A)
+$$
+
+#### 4.
+$$
+A=
+\begin{bmatrix}
+-7 & -5\\
+1 & 4
+\end{bmatrix}
+$$
+
+#### 5.
+$$
+A=
+\begin{bmatrix}
+0 & 2 & -3\\
+1 & -2 & -1\\
+0 & 0 & 1
+\end{bmatrix}
+$$
+
+#### 6.
+$$
+A=
+\begin{bmatrix}
+1 & -3 & 1 & 1\\
+-3 & 1 & 1 & 1\\
+1 & 1 & -3 & 1\\
+1 & 1 & 1 & -3
+\end{bmatrix}
+$$
 
 ### B. Gunakan rumus matriks adjoin untuk menghitung invers dari matriks berikut dengan rumus
 
@@ -98,7 +171,7 @@ $$
 \det(A)=-2M_{12}-3M_{13}
 $$
 
-### Minor \(M_{12}\)
+Minor \(M_{12}\)
 
 $$
 M_{12}=
@@ -116,7 +189,7 @@ $$
 =1
 $$
 
-### Minor \(M_{13}\)
+Minor \(M_{13}\)
 
 $$
 M_{13}=
@@ -168,7 +241,7 @@ $$
 \det(A)=1M_{11}-(-3)M_{12}+1M_{13}-1M_{14}
 $$
 
-### Minor \(M_{11}\)
+Minor \(M_{11}\)
 
 $$
 M_{11}=
@@ -205,7 +278,7 @@ $$
 =8+4+4=16
 $$
 
-### Minor \(M_{12}\)
+Minor \(M_{12}\)
 
 $$
 M_{12}=
@@ -242,7 +315,7 @@ $$
 =-24+4+4=-16
 $$
 
-### Minor \(M_{13}\)
+Minor \(M_{13}\)
 
 $$
 M_{13}=
@@ -279,7 +352,7 @@ $$
 =12+4=16
 $$
 
-### Minor \(M_{14}\)
+Minor \(M_{14}\)
 
 $$
 M_{14}=
@@ -364,7 +437,7 @@ $$
 
 ---
 
-### 1. Mencari adjoin matriks
+ 1. Mencari adjoin matriks
 
 Untuk matriks 2×2:
 
@@ -398,7 +471,7 @@ $$
 
 ---
 
-### 2. Mencari invers matriks
+2. Mencari invers matriks
 
 $$
 A^{-1}=\frac{1}{-23}
@@ -453,9 +526,9 @@ $$
 
 ---
 
-### 1. Mencari matriks kofaktor
+1. Mencari matriks kofaktor
 
-#### Kofaktor \(C_{11}\)
+Kofaktor \(C_{11}\)
 
 $$
 C_{11}=(-1)^{1+1}
@@ -466,7 +539,7 @@ C_{11}=(-1)^{1+1}
 =-2
 $$
 
-#### Kofaktor \(C_{12}\)
+Kofaktor \(C_{12}\)
 
 $$
 C_{12}=(-1)^{1+2}
@@ -477,7 +550,7 @@ C_{12}=(-1)^{1+2}
 =-1
 $$
 
-#### Kofaktor \(C_{13}\)
+Kofaktor \(C_{13}\)
 
 $$
 C_{13}=(-1)^{1+3}
@@ -488,7 +561,7 @@ C_{13}=(-1)^{1+3}
 =0
 $$
 
-#### Kofaktor \(C_{21}\)
+Kofaktor \(C_{21}\)
 
 $$
 C_{21}=(-1)^{2+1}
@@ -499,7 +572,7 @@ C_{21}=(-1)^{2+1}
 =-2
 $$
 
-#### Kofaktor \(C_{22}\)
+Kofaktor \(C_{22}\)
 
 $$
 C_{22}=(-1)^{2+2}
@@ -510,7 +583,7 @@ C_{22}=(-1)^{2+2}
 =0
 $$
 
-#### Kofaktor \(C_{23}\)
+Kofaktor \(C_{23}\)
 
 $$
 C_{23}=(-1)^{2+3}
@@ -521,7 +594,7 @@ C_{23}=(-1)^{2+3}
 =0
 $$
 
-#### Kofaktor \(C_{31}\)
+Kofaktor \(C_{31}\)
 
 $$
 C_{31}=(-1)^{3+1}
@@ -532,7 +605,7 @@ C_{31}=(-1)^{3+1}
 =-8
 $$
 
-#### Kofaktor \(C_{32}\)
+Kofaktor \(C_{32}\)
 
 $$
 C_{32}=(-1)^{3+2}
@@ -543,7 +616,7 @@ C_{32}=(-1)^{3+2}
 =-3
 $$
 
-#### Kofaktor \(C_{33}\)
+Kofaktor \(C_{33}\)
 
 $$
 C_{33}=(-1)^{3+3}
@@ -567,7 +640,7 @@ $$
 
 ---
 
-### 2. Mencari adjoin
+2. Mencari adjoin
 
 Transpose matriks kofaktor:
 
@@ -582,7 +655,7 @@ $$
 
 ---
 
-### 3. Mencari invers matriks
+3. Mencari invers matriks
 
 $$
 A^{-1}=\frac{1}{-2}
@@ -615,7 +688,7 @@ A^{-1}=
 }
 $$
 
-### Penyelesaian Detail Nomor 6: Invers Matriks 4x4
+Penyelesaian Detail Nomor 6: Invers Matriks 4x4
 
 $$
 A=
