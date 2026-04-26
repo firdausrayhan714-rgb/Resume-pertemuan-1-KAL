@@ -38,27 +38,37 @@ $$
 ### Jawaban
 ### Penyelesaian Soal Nomor A1
 
-Diketahui matriks:
-$$A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}$$
+$$
+A=
+\begin{bmatrix}
+-7 & -5\\
+1 & 4
+\end{bmatrix}
+$$
 
-**Langkah-langkah Penyelesaian (Ekspansi Baris Pertama):**
+Determinan matriks 2×2:
 
-1. Gunakan rumus ekspansi kofaktor untuk baris $i=1$:
-   $$\det(A) = \sum_{k=1}^{2} (-1)^{1+k} a_{1k} M_{1k}$$
+$$
+\det(A)=ad-bc
+$$
 
-2. Jabarkan rumusnya:
-   $$\det(A) = a_{11} (-1)^{1+1} M_{11} + a_{12} (-1)^{1+2} M_{12}$$
+$$
+\det(A)=(-7)(4)-(-5)(1)
+$$
 
-3. Tentukan nilai Minor ($M_{11}$ dan $M_{12}$):
-   * $M_{11} = \det(4) = 4$
-   * $M_{12} = \det(1) = 1$
+$$
+=-28+5
+$$
 
-4. Masukkan angka ke dalam rumus:
-   $$\det(A) = (-7)(1)(4) + (-5)(-1)(1)$$
-   $$\det(A) = -28 + 5$$
+$$
+=-23
+$$
 
-5. **Hasil Akhir:**
-   $$\det(A) = -23$$
+Jadi,
+
+$$
+\boxed{\det(A)=-23}
+$$
 
 ### Penyelesaian Soal Nomor A2
 
@@ -67,50 +77,264 @@ $$A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}$$
 
 **Langkah-langkah Penyelesaian (Ekspansi Baris Ketiga):**
 
-1. Pilih baris ke-3 ($i=3$) untuk mempermudah perhitungan karena terdapat elemen bernilai 0:
-   $$\det(A) = a_{31}C_{31} + a_{32}C_{32} + a_{33}C_{33}$$
+$$
+A=
+\begin{bmatrix}
+0 & 2 & -3\\
+1 & -2 & -1\\
+0 & 0 & 1
+\end{bmatrix}
+$$
 
-2. Jabarkan berdasarkan elemen baris ke-3:
-   $$\det(A) = 0 \cdot (-1)^{3+1} M_{31} + 0 \cdot (-1)^{3+2} M_{32} + 1 \cdot (-1)^{3+3} M_{33}$$
+Ekspansi baris pertama:
 
-3. Karena dua elemen pertama adalah 0, kita cukup menghitung bagian terakhir:
-   $$\det(A) = 0 + 0 + 1 \cdot (1) \cdot M_{33}$$
+$$
+\det(A)=0\cdot M_{11}-2\cdot M_{12}+(-3)\cdot M_{13}
+$$
 
-4. Tentukan nilai Minor $M_{33}$ (determinan submatriks dengan menghapus baris 3 dan kolom 3):
-   $$M_{33} = \begin{vmatrix} 0 & 2 \\ 1 & -2 \end{vmatrix}$$
-   $$M_{33} = (0 \cdot -2) - (2 \cdot 1) = 0 - 2 = -2$$
+Karena elemen pertama bernilai nol, maka:
 
-5. **Hasil Akhir:**
-   $$\det(A) = 1 \cdot (-2)$$
-   $$\det(A) = -2$$
+$$
+\det(A)=-2M_{12}-3M_{13}
+$$
 
-### Penyelesaian Nomor 3: Determinan Matriks 4x4
+### Minor \(M_{12}\)
 
-Diketahui matriks:
-$$A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}$$
+$$
+M_{12}=
+\begin{vmatrix}
+1 & -1\\
+0 & 1
+\end{vmatrix}
+$$
 
-**Langkah 1: Ekspansi Baris Pertama**
-Gunakan pola tanda kofaktor $(+, -, +, -)$:
-$$\det(A) = 1(M_{11}) - (-3)(M_{12}) + 1(M_{13}) - 1(M_{14})$$
-$$\det(A) = 1(M_{11}) + 3(M_{12}) + 1(M_{13}) - 1(M_{14})$$
+$$
+=(1)(1)-(-1)(0)
+$$
 
-**Langkah 2: Menghitung Minor 3x3**
+$$
+=1
+$$
 
-1. **Minor $M_{11}$:**
-   $$M_{11} = \begin{vmatrix} 1 & 1 & 1 \\ 1 & -3 & 1 \\ 1 & 1 & -3 \end{vmatrix} = 1(9-1) - 1(-3-1) + 1(1+3) = 8+4+4 = 16$$
+### Minor \(M_{13}\)
 
-2. **Minor $M_{12}$:**
-   $$M_{12} = \begin{vmatrix} -3 & 1 & 1 \\ 1 & -3 & 1 \\ 1 & 1 & -3 \end{vmatrix} = -3(9-1) - 1(-3-1) + 1(1+3) = -24+4+4 = -16$$
+$$
+M_{13}=
+\begin{vmatrix}
+1 & -2\\
+0 & 0
+\end{vmatrix}
+$$
 
-3. **Minor $M_{13}$:**
-   $$M_{13} = \begin{vmatrix} -3 & 1 & 1 \\ 1 & 1 & 1 \\ 1 & 1 & -3 \end{vmatrix} = -3(-3-1) - 1(-3-1) + 1(1-1) = 12+4+0 = 16$$
+$$
+=(1)(0)-(-2)(0)
+$$
 
-4. **Minor $M_{14}$:**
-   $$M_{14} = \begin{vmatrix} -3 & 1 & 1 \\ 1 & -3 & 1 \\ 1 & 1 & 1 \end{vmatrix} = -3(-3-1) - 1(1-1) + 1(1+3) = 12-0+4 = 16$$
+$$
+=0
+$$
 
-**Langkah 3: Substitusi Akhir**
-$$\det(A) = 1(16) + 3(-16) + 1(16) - 1(16)$$
-$$\det(A) = 16 - 48 + 16 - 16 = -32$$
+Substitusi:
+
+$$
+\det(A)=-2(1)-3(0)
+$$
+
+$$
+=-2
+$$
+
+Jadi,
+
+$$
+\boxed{\det(A)=-2}
+$$
+
+### Penyelesaian Nomor B3: Determinan Matriks 4x4
+
+$$
+A=
+\begin{bmatrix}
+1 & -3 & 1 & 1\\
+-3 & 1 & 1 & 1\\
+1 & 1 & -3 & 1\\
+1 & 1 & 1 & -3
+\end{bmatrix}
+$$
+
+Ekspansi baris pertama:
+
+$$
+\det(A)=1M_{11}-(-3)M_{12}+1M_{13}-1M_{14}
+$$
+
+### Minor \(M_{11}\)
+
+$$
+M_{11}=
+\begin{vmatrix}
+1 & 1 & 1\\
+1 & -3 & 1\\
+1 & 1 & -3
+\end{vmatrix}
+$$
+
+$$
+=1
+\begin{vmatrix}
+-3 & 1\\
+1 & -3
+\end{vmatrix}
+-1
+\begin{vmatrix}
+1 & 1\\
+1 & -3
+\end{vmatrix}
++1
+\begin{vmatrix}
+1 & -3\\
+1 & 1
+\end{vmatrix}
+$$
+
+$$
+=1(9-1)-1(-3-1)+1(1+3)
+$$
+
+$$
+=8+4+4=16
+$$
+
+### Minor \(M_{12}\)
+
+$$
+M_{12}=
+\begin{vmatrix}
+-3 & 1 & 1\\
+1 & -3 & 1\\
+1 & 1 & -3
+\end{vmatrix}
+$$
+
+$$
+=(-3)
+\begin{vmatrix}
+-3 & 1\\
+1 & -3
+\end{vmatrix}
+-1
+\begin{vmatrix}
+1 & 1\\
+1 & -3
+\end{vmatrix}
++1
+\begin{vmatrix}
+1 & -3\\
+1 & 1
+\end{vmatrix}
+$$
+
+$$
+=(-3)(9-1)-1(-3-1)+1(1+3)
+$$
+
+$$
+=-24+4+4=-16
+$$
+
+### Minor \(M_{13}\)
+
+$$
+M_{13}=
+\begin{vmatrix}
+-3 & 1 & 1\\
+1 & 1 & 1\\
+1 & 1 & -3
+\end{vmatrix}
+$$
+
+$$
+=(-3)
+\begin{vmatrix}
+1 & 1\\
+1 & -3
+\end{vmatrix}
+-1
+\begin{vmatrix}
+1 & 1\\
+1 & -3
+\end{vmatrix}
++1
+\begin{vmatrix}
+1 & 1\\
+1 & 1
+\end{vmatrix}
+$$
+
+$$
+=(-3)(-4)-1(-4)+1(0)
+$$
+
+$$
+=12+4=16
+$$
+
+### Minor \(M_{14}\)
+
+$$
+M_{14}=
+\begin{vmatrix}
+-3 & 1 & 1\\
+1 & 1 & -3\\
+1 & 1 & 1
+\end{vmatrix}
+$$
+
+$$
+=(-3)
+\begin{vmatrix}
+1 & -3\\
+1 & 1
+\end{vmatrix}
+-1
+\begin{vmatrix}
+1 & -3\\
+1 & 1
+\end{vmatrix}
++1
+\begin{vmatrix}
+1 & 1\\
+1 & 1
+\end{vmatrix}
+$$
+
+$$
+=(-3)(4)-1(4)+0
+$$
+
+$$
+=-12-4=-16
+$$
+
+Substitusi:
+
+$$
+\det(A)=1(16)-(-3)(-16)+1(16)-1(-16)
+$$
+
+$$
+=16-48+16+16
+$$
+
+$$
+=0
+$$
+
+Jadi,
+
+$$
+\boxed{\det(A)=0}
+$$
 
 ### Penyelesaian Soal Nomor B4 
 
@@ -156,19 +380,36 @@ $$A^{-1} = \frac{1}{-2} \begin{bmatrix} -2 & -2 & -8 \\ -1 & 0 & -3 \\ 0 & 0 & -
 
 ### Penyelesaian Detail Nomor 6: Invers Matriks 4x4
 
-Berdasarkan perhitungan sebelumnya, didapatkan $\det(A) = -32$.
+$$
+A=
+\begin{bmatrix}
+1 & -3 & 1 & 1\\
+-3 & 1 & 1 & 1\\
+1 & 1 & -3 & 1\\
+1 & 1 & 1 & -3
+\end{bmatrix}
+$$
 
-**Langkah 1: Menentukan Matriks Adjoin**
-Matriks adjoin ($adj \ A$) diperoleh dari transpose matriks kofaktor. Untuk matriks ini, hasilnya adalah:
-$$\text{adj } A = \begin{bmatrix} 16 & 16 & 16 & 16 \\ 16 & 16 & -16 & -16 \\ 16 & -16 & 16 & -16 \\ 16 & -16 & -16 & 16 \end{bmatrix}$$
+Dari hasil sebelumnya diperoleh:
 
-**Langkah 2: Menghitung Invers**
-Gunakan rumus $A^{-1} = \frac{1}{\det A} \text{adj } A$:
-$$A^{-1} = \frac{1}{-32} \begin{bmatrix} 16 & 16 & 16 & 16 \\ 16 & 16 & -16 & -16 \\ 16 & -16 & 16 & -16 \\ 16 & -16 & -16 & 16 \end{bmatrix}$$
+$$
+\det(A)=0
+$$
 
-**Langkah 3: Pembagian Setiap Elemen**
-* $\frac{16}{-32} = -0.5$
-* $\frac{-16}{-32} = 0.5$
+Rumus invers matriks dengan adjoin:
 
-**Hasil Akhir:**
-$$A^{-1} = \begin{bmatrix} -0.5 & -0.5 & -0.5 & -0.5 \\ -0.5 & -0.5 & 0.5 & 0.5 \\ -0.5 & 0.5 & -0.5 & 0.5 \\ -0.5 & 0.5 & 0.5 & -0.5 \end{bmatrix}$$
+$$
+A^{-1}=\frac{1}{\det(A)}\operatorname{adj}(A)
+$$
+
+Substitusi:
+
+$$
+A^{-1}=\frac{1}{0}\operatorname{adj}(A)
+$$
+
+Karena pembagian dengan nol tidak terdefinisi, maka matriks \(A\) tidak memiliki invers.
+
+$$
+\boxed{A^{-1}\text{ tidak ada}}
+$$
