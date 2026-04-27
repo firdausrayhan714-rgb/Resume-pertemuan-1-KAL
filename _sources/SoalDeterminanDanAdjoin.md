@@ -207,7 +207,7 @@ $$
 \boxed{\det(A)=-2}
 $$
 
-### Penyelesaian Nomor A3: Determinan Matriks 4x4
+### Penyelesaian Nomor A3
 
 $$
 A=
