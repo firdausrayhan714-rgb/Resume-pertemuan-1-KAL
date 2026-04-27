@@ -207,7 +207,7 @@ $$
 \boxed{\det(A)=-2}
 $$
 
-### Penyelesaian Nomor A3
+### Penyelesaian SOAL Nomor A3
 
 $$
 A=
