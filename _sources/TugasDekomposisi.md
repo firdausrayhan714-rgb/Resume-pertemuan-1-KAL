@@ -1,4 +1,5 @@
-# Tahap 1 - Membentuk Vektor q₁
+# Tugas Dekompoisi Eigen Value
+## Tahap 1 - Membentuk Vektor q₁
 
 Kolom pertama matriks $A$:
 
@@ -39,7 +40,7 @@ q_1
 \end{bmatrix}
 $$
 
-# Tahap 2 - Menghitung Dot Product q₁ · a₂
+## Tahap 2 - Menghitung Dot Product q₁ · a₂
 
 Kolom kedua matriks:
 
@@ -90,7 +91,7 @@ $$
 \frac{4\sqrt{5}}{5}
 $$
 
-# Tahap 3 - Menghitung Vektor Ortogonal u₂
+## Tahap 3 - Menghitung Vektor Ortogonal u₂
 
 Rumus proyeksi vektor:
 
@@ -155,7 +156,7 @@ u_2
 \end{bmatrix}
 $$
 
-# Tahap 4 - Normalisasi u₂ Menjadi q₂
+## Tahap 4 - Normalisasi u₂ Menjadi q₂
 
 Vektor ortogonal yang diperoleh:
 
@@ -236,7 +237,7 @@ q_2 =
 \end{bmatrix}
 $$
 
-# Tahap 5 - Membentuk Matriks Q
+## Tahap 5 - Membentuk Matriks Q
 
 Matriks \(Q\) dibentuk dari kolom-kolom vektor ortonormal \(q_1\) dan \(q_2\):
 
@@ -283,7 +284,7 @@ $$
 Q^TQ = I
 $$
 
-# Tahap 6 - Membentuk Matriks R
+## Tahap 6 - Membentuk Matriks R
 
 Matriks \(R\) diperoleh dari hasil perkalian:
 
@@ -337,7 +338,7 @@ $$
 
 Matriks \(R\) berbentuk segitiga atas sesuai sifat dekomposisi QR.
 
-# Tahap 7 - Verifikasi QR = A
+## Tahap 7 - Verifikasi QR = A
 
 Setelah diperoleh matriks \(Q\) dan \(R\), langkah berikutnya adalah memverifikasi bahwa:
 
@@ -405,7 +406,7 @@ $$
 QR = A
 $$
 
-# Tahap 8 - Membentuk Matriks Baru A₁ = RQ
+## Tahap 8 - Membentuk Matriks Baru A₁ = RQ
 
 Pada metode QR Iteration, matriks baru dibentuk dengan rumus:
 
@@ -475,7 +476,7 @@ $$
 
 Elemen di luar diagonal mulai mengecil, menandakan proses konvergensi menuju nilai eigen.
 
-# Tahap 9 - QR Iteration Berulang
+## Tahap 9 - QR Iteration Berulang
 
 Proses QR Iteration dilakukan secara berulang menggunakan rumus:
 
@@ -491,7 +492,7 @@ $$
 
 Setiap iterasi akan membuat elemen di luar diagonal semakin kecil sehingga matriks mendekati bentuk diagonal.
 
-## Iterasi 1
+#### Iterasi 1
 
 $$
 A_1 =
@@ -501,7 +502,7 @@ A_1 =
 \end{bmatrix}
 $$
 
-## Iterasi 2
+#### Iterasi 2
 
 $$
 A_2 =
@@ -511,7 +512,7 @@ A_2 =
 \end{bmatrix}
 $$
 
-## Iterasi 3
+#### Iterasi 3
 
 $$
 A_3 =
@@ -521,7 +522,7 @@ A_3 =
 \end{bmatrix}
 $$
 
-## Iterasi 4
+#### Iterasi 4
 
 $$
 A_4 =
@@ -531,7 +532,7 @@ A_4 =
 \end{bmatrix}
 $$
 
-## Iterasi 5
+#### Iterasi 5
 
 $$
 A_5 =
@@ -541,7 +542,7 @@ A_5 =
 \end{bmatrix}
 $$
 
-## Iterasi 6
+#### Iterasi 6
 
 $$
 A_6 =
@@ -551,7 +552,7 @@ A_6 =
 \end{bmatrix}
 $$
 
-## Iterasi 7
+#### Iterasi 7
 
 $$
 A_7 =
@@ -561,7 +562,7 @@ A_7 =
 \end{bmatrix}
 $$
 
-## Iterasi 8
+#### Iterasi 8
 
 $$
 A_8 =
@@ -571,7 +572,7 @@ A_8 =
 \end{bmatrix}
 $$
 
-## Iterasi 9
+#### Iterasi 9
 
 $$
 A_9 =
@@ -581,7 +582,7 @@ A_9 =
 \end{bmatrix}
 $$
 
-## Iterasi 10
+#### Iterasi 10
 
 $$
 A_{10} \approx
@@ -593,7 +594,7 @@ $$
 
 Terlihat bahwa elemen di luar diagonal semakin mendekati nol, sedangkan elemen diagonal mendekati nilai eigen matriks.
 
-# Tahap 10 - Menentukan Nilai Eigen
+## Tahap 10 - Menentukan Nilai Eigen
 
 Setelah dilakukan 10 iterasi QR, matriks hasil mendekati bentuk diagonal:
 
@@ -675,7 +676,7 @@ $$
 
 Hasil QR Iteration sesuai dengan hasil perhitungan analitik.
 
-# Kesimpulan
+## Kesimpulan
 
 Metode Dekomposisi QR digunakan untuk memecah matriks menjadi dua matriks, yaitu matriks ortogonal \(Q\) dan matriks segitiga atas \(R\).
 
