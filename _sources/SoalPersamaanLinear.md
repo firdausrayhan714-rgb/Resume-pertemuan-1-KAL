@@ -24,8 +24,8 @@ $$
 $$
 
 
-# **cara penyelesaiannya**
-## langkah 1 Menghilangkan $x$1
+## **cara penyelesaiannya**
+### langkah 1 Menghilangkan $x$1
 
 $$
 R_2 = R_2-2R_1\\
@@ -34,7 +34,7 @@ R_4 = R_4-3R_1\\
 R_5 = R_5-R_1
 $$
 
-### Hasil Eliminasi 
+#### Hasil Eliminasi 
 $$
 \begin{bmatrix}
 1 & 1 & 1 & 1 & 1 & 15 \\
@@ -45,14 +45,14 @@ $$
 \end{bmatrix}
 $$
 
-## langkah 2 menghilangkan $x$2
+### langkah 2 menghilangkan $x$2
 
 $$
 R_4 = R_4+2R_2\\
 R_5 = R_5-R_2
 $$
 
-### Hasil Eliminasi 
+#### Hasil Eliminasi 
 
 $$
 \begin{bmatrix}
@@ -64,14 +64,14 @@ $$
 \end{bmatrix}
 $$
 
-## Langkah 3 Menghilangkan $x$3
+### Langkah 3 Menghilangkan $x$3
 
 $$
 R_4 = R_4+4R_3\\
 R_5 = R_5-R_3
 $$
 
-### Hasil Eliminasi
+#### Hasil Eliminasi
 
 $$
 \begin{bmatrix}
@@ -83,13 +83,13 @@ $$
 \end{bmatrix}
 $$
 
-## Langkah 4 Menghilangkan $x$4
+### Langkah 4 Menghilangkan $x$4
 
 $$
 R_5 = R_5+\frac{1}{5}R_4\\
 $$
 
-### Hasil Eliminasi
+#### Hasil Eliminasi
 
 $$
 \begin{bmatrix}
@@ -101,7 +101,7 @@ $$
 \end{bmatrix}
 $$
 
-## Langkah 5
+### Langkah 5
 Menentukan $x$5
 
 $$
